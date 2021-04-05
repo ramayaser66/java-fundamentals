@@ -1,3 +1,7 @@
 # java-fundamentals
 files:
-Main.java
+lab-1
+- Main.java
+lab-2
+- library.java
+
