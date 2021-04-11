@@ -38,5 +38,23 @@ Don’t show an error if the line ends with an opening curly brace {;
 Don’t show an error if the line ends with an closing curly brace };
 Don’t show an error if the line contains if or else; 
 
+lab-6 
+ - we built a class called Restaurant that takes in a string name, an int stars and an int price. 
+
+ it has a constructor that builds each restaurant. 
+ with a condition that the stars should be form 0 to 5. 
+
+ it contains a addReview method that adds a review for each restaurant. 
+
+ also it contains a method called toString that we can override the object class
+ so  we can get the data for the object itself not the address. 
+
+ - we built another class called review that takes in a string body, a string author and an integer numberOfStars.
+
+ it has a constructor that creates reviews for the restaurant.
+the review class is extended to the restaurant class so that I can add a review to a specified restaurant using the name of that restaurant and I can edit the starts number with the new review by adding numberOfStars. 
+
+ 
+
 
 
