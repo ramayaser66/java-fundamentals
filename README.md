@@ -54,6 +54,27 @@ lab-6
  it has a constructor that creates reviews for the restaurant.
 the review class is extended to the restaurant class so that I can add a review to a specified restaurant using the name of that restaurant and I can edit the starts number with the new review by adding numberOfStars. 
 
+lab-7 
+
+a continuation of lab 6 
+- we built a new class Shop that has  a name, description, and price.
+it has a constructor 
+ it contains a method called toString that we can override the object class
+ so  we can get the data for the object itself not the address. 
+ it contains a addReview method that adds a review for each shop. 
+Add tests for the basics of your Shop class.
+
+- we also built a Theater should have a name and all of the movies currently showing there.
+it has a  a constructor 
+it has an addMovie method to add movies that are shown in that theater 
+ and removeMovie instance methods to remove movies that are no longer in that theater. 
+ it also has a toString method 
+
+ allow to add reviews whether to the theater or the movies displayed in it. 
+
+
+
+
  
 
 
