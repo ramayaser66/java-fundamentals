@@ -5,21 +5,44 @@ package inheritance;
 
 public class Library {
     public static void main(String[] args) {
-        Restaurant restaurant1 = new Restaurant("restaurant1", 3,4);
-        restaurant1.addReview("good review", "author1", 3);
-        System.out.println(restaurant1.toString());
-//
-        Restaurant restaurant2 = new Restaurant("restaurant2", 3,10);
-        restaurant2.addReview("poor review", "author2", 1);
-        System.out.println(restaurant2.toString());
-//
-//        Restaurant restaurant3 = new Restaurant("restaurant3", 3,7);
-//        restaurant3.addReview("excellent review", "author1", 4);
-//        System.out.println(restaurant3.toString());
+              Restaurant restaurant1 = new Restaurant("restaurant1", 3,4);
+       restaurant1.addReview("good review", "author1", 3);
+       System.out.println(restaurant1.toString());
 
-//        Review review = new Review("restaurant3","excellent review", "author1", 4 );
-//        System.out.println(review.toString());
+       Restaurant restaurant2 = new Restaurant("restaurant2", 3,10);
+       restaurant2.addReview("poor review", "author2", 1);
+       System.out.println(restaurant2.toString());
 
+       Restaurant restaurant3 = new Restaurant("restaurant3", 3,7);
+       restaurant3.addReview("excellent review", "author1", 4);
+       System.out.println(restaurant3.toString());
+
+       Review review = new Review("restaurant3","excellent review", "author1", 4 );
+       System.out.println(review.toString());
+
+        //lab-7
+
+        Shop shop1 = new Shop("shop1", "shop for books", 10 );
+        shop1.addReview("great shop", "customer A",4 );
+        System.out.println(shop1.toString());
+
+
+        Shop shop2 = new Shop("shop2", "shop for pets", 20 );
+        System.out.println(shop2.toString());
+
+
+       Theater theater1 = new Theater("theater1");
+       Theater theater2 = new Theater("theater2");
+       theater1.addMovie("Harry Potter");
+       theater1.addMovie("pride and prejudice");
+       theater1.removeMovie("when Harry met sally");
+       theater1.removeMovie("Harry Potter");
+
+       theater1.addReview("pride and prejudice", "great ", "viewer A",4);
+       theater2.addReview("", "great ", "viewer A",4);
+
+       System.out.println(theater1.toString());
+       System.out.println(theater2.toString());
 
     }
 }

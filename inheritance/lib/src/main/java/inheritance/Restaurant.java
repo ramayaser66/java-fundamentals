@@ -6,7 +6,6 @@ public class Restaurant {
     int price;
 
 
-
     public Restaurant(String name, int stars, int price) {
         if (stars < 0 || stars>5){
             System.out.println("invalid stars rating please rate form 0 to 5 ... ");
@@ -38,8 +37,18 @@ public class Restaurant {
     @Override
     public String toString(){
 
-        return "restaurant info... name: " +name+" number of stars "+stars+" price "+ price+"\n"+" Review: "+ review.toString();
+        if(review != null){
+            return "restaurant info... name: " +name+" number of stars "
+                    +stars+" price "+ price+"\n"+" Review: "+ review.toString();
+
+        }else{
+            return "restaurant info... name: " +name+" number of stars "
+                    +stars+" price "+ price;
+        }
+
+
 
     }
+
 
 }

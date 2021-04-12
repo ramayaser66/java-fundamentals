@@ -25,4 +25,66 @@ public class LibraryTest {
         
 
     }
+// lab-7 tests
+    @Test public  void testTheaterAdd(){
+
+
+        Theater theater1 = new Theater("theater1");
+        theater1.addMovie("Harry Potter");
+        theater1.addMovie("pride and prejudice");
+
+
+
+       String expected = "Theater{name='theater1', movies=[Harry Potter, pride and prejudice]}";
+       String result =  theater1.toString();
+
+        assertEquals("an error occurred", expected, result);
+
+    }
+
+    @Test public  void testTheaterRemove(){
+        Theater theater1 = new Theater("theater1");
+        theater1.addMovie("Harry Potter");
+        theater1.addMovie("pride and prejudice");
+        theater1.removeMovie("Harry Potter");
+
+
+        String expected = "Theater{name='theater1', movies=[pride and prejudice]}";
+
+        String result =  theater1.toString();
+
+        assertEquals("an error occurred", expected, result);
+
+    }
+
+
+    @Test public void testShopReview(){
+        // test if a shop has a review or not
+        Shop shop1 = new Shop("shop1", "shop for books", 10 );
+        shop1.addReview("great shop", "customer A",4 );
+
+
+        String expected = "Shop{name='shop1', description='shop for books', price=10}\n" +
+                " review: Review info: great shop author: customer A number of stars: 4";
+        String result = shop1.toString();
+
+
+        Shop shop2 = new Shop("shop2", "shop for pets", 20 );
+        String expected2 = "Shop{name='shop2', description='shop for pets', price=20}";
+
+        String result2 = shop2.toString();
+
+
+        assertEquals("an error occurred", expected, result);
+        assertEquals("an error occurred", expected2, result2);
+
+
+
+    }
+
+
+
+
+
 }
+
